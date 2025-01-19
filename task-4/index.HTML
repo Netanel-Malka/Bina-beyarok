@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calendar</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        direction: rtl;
+        text-align: center;
+      }
+      .calendar {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 10px;
+      }
+      .day {
+        border: 1px solid #ccc;
+        padding: 10px;
+        cursor: pointer;
+      }
+      .today {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>calendar</h1>
+    <button id="prev-month">prev-month</button>
+    <button id="next-month">next-month</button>
+    <div id="calendar" class="calendar"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
