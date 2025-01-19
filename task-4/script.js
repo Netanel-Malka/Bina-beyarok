@@ -9,7 +9,7 @@ function renderCalendar(date) {
   const year = date.getFullYear();
   const month = date.getMonth();
 
-  // יצירת ימי השבוע
+  
   const daysOfWeek = ["א", "ב", "ג", "ד", "ה", "ו", "ש"];
   daysOfWeek.forEach((day) => {
     const dayElement = document.createElement("div");
@@ -42,7 +42,7 @@ function renderCalendar(date) {
     }
 
     dayElement.addEventListener("click", () => {
-      const event = prompt("הוסף אירוע ליום זה:");
+      const event = prompt("הוסף אירוע:");
       if (event) {
         dayElement.textContent += `\n${event}`;
       }
